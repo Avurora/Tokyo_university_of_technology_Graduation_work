@@ -17,6 +17,8 @@ html p{
 
 body{
     background-color: #F7F7F7; /*灰色のカバー*/
+    position: relative;
+    z-index: -1;
 }
 .all-margin{
     margin: 0 40px;
