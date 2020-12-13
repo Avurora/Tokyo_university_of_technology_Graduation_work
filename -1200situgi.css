@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
+
+body{
+    background-color: #F7F7F7; /*灰色のカバー*/
+}
+.img-1{
+    margin-bottom: -6px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.all-margin{
+    margin: 0 40px;
+}
+.topline{
+    
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+
+/*フッター*/
+.margin-top{
+    margin-top: 100px;
+}
+.border{
+    border: 1px solid #77b8d3;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #292929;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+/*動的ナビゲーションバー*/
+.menu-1{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+.menu-1 li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-1 li a{
+    text-decoration: none;
+    color: #77b8d3;
+    margin-left: 20px;
+}
+.menu-1-fix{
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    top: 24px;
+}
+.menu-1-fix.transform{
+    background-color: rgba(255,255,255,0.8);
+    top: 0px;
+}
+/*ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.nav-yohaku{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,0,4,1.00,0); 
+}
+.page-guide img{
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.page-guide{
+    display: inline-block;
+    margin-bottom: 50px;
+     padding-top: 40px;
+}
+.page-guide p{
+    display: inline-block;
+    color: #717171;
+}
+/*ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+/*とりあえずのQ＆A↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.all-margin .toriaezu{
+    color: #292929;
+    line-height: 50px
+}
+/*とりあえずのQ＆A↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*消去↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.pad-nav-delete{
+    display: none;
+}
+.sumaho-nav-delete{
+    display: none;
+}
+/*消去↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+
+
+
+
