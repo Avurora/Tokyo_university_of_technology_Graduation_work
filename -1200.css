@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
+
+body{
+    background-color: #BDBDBD; /*灰色のカバー*/
+}
+.img-1{
+    margin-bottom: -6px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.all-margin{
+    margin: 0 40px;
+}
+.topline{
+    
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+
+
+/*動的ナビゲーションバー*/
+.menu-1{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+.menu-1 li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-1 li a{
+    text-decoration: none;
+    color: #77b8d3;
+    margin-left: 20px;
+}
+.menu-1-fix{
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    top: 24px;
+}
+.menu-1-fix.transform{
+    background-color: rgba(255,255,255,0.8);
+    top: 0px;
+}
+/*1199- delete*/
+#nav-drawer{
+    display: none;
+}
+
+
+
+
+
+
+
+.guide{
+    padding-top: 30px;
+}
+.guide p{
+    color: #717171;
+    font-size:16px;
+    padding: 20px 0px 0px 0px;
+    position: relative;
+    top: -22px;
+    left: 30px;
+}
+.NEWS p{
+    color: #77b8d3;
+    font-size: 22px;
+    margin-top: 50px;
+    
+    
+}
+.NEWS-1{
+    position: relative;
+    left: -50px;
+    
+}
+.NEWS-1 .caption-1{
+    width: 800px;
+}
+.NEWS-1 .caption-2{
+    width: 150px;
+    color: #000;
+}
+.NEWS-1 td{
+    padding-top: 10px;
+}
+.botton-1{
+    position: relative;
+    margin-bottom: 50px;
+}
+.NEWS{margin-bottom: 40px;}
+.title{
+    font-size: 22px;
+}
+.title-2 p{
+    position: relative;
+    right: 870px;
+    bottom: 2px;
+    font-size: 20px;
+}
+.title-2{
+    margin-top: 20px;
+}
+
+
+
+.syakimonndai .example{
+    margin-top: 163px;
+    position: relative;
+    right: 20px;
+    bottom: 90px;
+}
+.syakimonndai .example img{
+    margin-left: 15px;
+}
+
+.syakaimondai-text{
+    color: #000;
+    text-align: left;
+    padding-top: 110px;
+}
+.noyaki{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+.title-3 p{
+    position: relative;
+    right: 970px;
+    bottom: 2px;
+    font-size: 20px;
+}
+.title-3{
+    margin-bottom: 20px;
+}
+.syakaimondai-text-2{
+    color: #000;
+    text-align: left;
+    padding-top: 40px;
+    width: 515px;
+}
+.example-2{
+    position: relative;
+    right: 190px;
+    top: 50px;
+}
+.example-2 img{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+.huhoutouki{
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+.title-4 p{
+    position: relative;
+    right: 1030px;
+    bottom: 2px;
+    font-size: 20px;
+}
+.title-4{
+    margin-bottom: 20px
+}
+
+
+
+
+
+
+/*八千代市のゴミへの取り組み*/
+.title-5 p{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 13px;
+}
+.title-5 img{
+    margin-top: 2px;
+}
+.title-5{
+    margin-top: 20px;
+}
+
+.gomi-data{
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+.gomi-date-text{
+    color: #000;
+    width: 550px;
+    position: relative;
+    top: 60px;
+}
+.gomi-date-text-2{
+    position: relative;
+    top: 30px;
+    width: 550px;
+    color: #000;
+}
+.gomi-date-text-3{
+    position: relative;
+    top: 65px;
+    width: 550px;
+    color: #000;
+}
+.food-bank-link{
+    position: relative;
+    right: 730px;
+    bottom: 27px;
+}
+.border{
+    border: 1px solid #77b8d3;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #000;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.kahen_none{
+    display: none;
+}
+/*注意書き*/
+.caution{
+    color: #292929;
+    
+}
+/*注意書き*/
+
+
+
+
+
+p{
+ line-height: 150%;
+}
+.pad-pc-none{
+    display: none;
+}
+#table-none2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
