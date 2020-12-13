@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
+
+body{
+    background-color: #BDBDBD; /*灰色のカバー*/
+}
+.img-1{
+    margin-bottom: -6px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.all-margin{
+    margin: 0 5%;
+    margin-top: -10px;
+}
+.topline{
+    
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+
+
+/*フッター*/
+.margin-top{
+    margin-top: 100px;
+}
+.border{
+    border: 1px solid #77b8d3;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #000;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*消去系↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.pad-nav-delete{
+    display: none;
+}
+.menu-1-fix{
+    display: none;
+}
+.pc-main-3{
+    display: none;
+}
+.example{
+    display: none;
+}
+.kyokagyousya-pc{
+     display: none;
+}
+.tejun-pc{
+    display: none;
+}
+.sumaho-delete{
+    display: none;
+}
+/*消去系↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*スマホ版nav↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.menu-1-fix{
+    display: none;
+}
+.pad-nav-delete{
+    display: none;
+}
+header {
+  padding:35px 22px;
+  background: #77b8d3;
+    position: fixed;
+    border-radius: 10px;
+    left: 10px;
+    top: -27px;
+    z-index: 9999;
+}
+
+#tag01 {
+  position: relative;
+    top: 5px;
+    left: -12px;
+    
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#tag03 span, #tag03 span:before, #tag03 span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #FFF;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#tag03 span:before {
+  bottom: -8px;
+}
+#tag03 span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#tag04 {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#tag05 {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#tag02:checked ~ #tag04 {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#tag02:checked ~ #tag05 {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+.menu-1 li{
+    list-style: none;
+    padding: 20px 0px;
+    margin-left: 20px;
+}
+.menu-1 a{
+    text-decoration: none;  
+}
+.menu-1{
+    position: relative;
+    top: 20px;
+}
+.hum-logo{
+    margin: 30px 0 0 28px ;
+}
+
+.hum-line{
+    background-color: #77b8d3;
+    width: 200%;
+    height: 1px;
+    margin-left: -50px;
+}
+/*スマホ版nav↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*
+/*ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.nav-yohaku{
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255,0,4,1.00,0);
+    
+}.page-guide img{
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.page-guide{
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-top: 17px;
+}
+.page-guide p{
+    display: inline-block;
+    color: #717171;
+}
+/*ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*粗大ゴミの捨てる手順↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.tejun-text-2 p{
+    color: #292929;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.title-1{
+    color: #292929;
+    font-size: 18px;
+}
+    /*粗大ゴミの捨てる手順スマホレイアウト↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.tejun-yuudou{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tejun-sumaho p{
+     color: #292929;
+    text-align: justify;
+  text-justify: inter-ideograph;
+    padding-bottom: 15px;
+}
+#trade-manner{
+    display: none;
+}
+#trade-manner2{
+    display: none;
+}
+#trade-manner3{
+    display: none;
+}
+#trade-manner4{
+    display: none;
+}
+#trade-manner5{
+    display: none;
+}
+#trade-manner-botton{
+    margin-bottom: 15px;
+}
+#trade-manner-botton2{
+    margin-bottom: 15px;
+}
+#trade-manner-botton3{
+    margin-bottom: 15px;
+}
+#trade-manner-botton4{
+    margin-bottom: 15px;
+}
+#trade-manner-botton5{
+    margin-bottom: 15px;
+}
+.syoriken{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+    /*粗大ゴミの捨てる手順スマホレイアウト↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*粗大ゴミの捨てる手順↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*一時多量ゴミについて↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.title-2{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #292929;
+    padding-top: 30px;
+}
+.itijitaryougomi-text{
+    color: #292929;
+    text-align: justify;
+  text-justify: inter-ideograph;
+}
+/*一時多量ゴミについて↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*許可業者一覧↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.kyokagyousya-title{
+    font-size: 20px;
+     color: #292929;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.kyakagyoukya-sumaho-overflow{
+    overflow: scroll;
+    height: 500px;
+}
+/*許可業者一覧↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+.title-3{
+    color: #292929;
+    font-size: 20px;
+}
+.blue{
+    width: 15px;
+    height: 15px;
+    background-color: #77b8d3;
+    margin-right: 10px;
+    display: inline-block;  
+    vertical-align: middle;
+}
+.yellow{
+    width: 15px;
+    height: 15px;
+    background-color: #c8c876;
+    margin-right: 10px;
+    display: inline-block;   
+    vertical-align: middle;
+}
+.orange{
+    width: 15px;
+    height: 15px;
+    background-color: #c07f76;
+    margin-right: 10px;
+    display: inline-block;  
+    vertical-align: middle;
+}
+.green{
+    width: 15px;
+    height: 15px;
+    background-color: #79c284;
+    margin-right: 10px;
+    display: inline-block; 
+    vertical-align: middle;
+    
+}
+.purple{
+    width: 15px;
+    height: 15px;
+    background-color: #9375b3;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.example-text{
+    display: inline-block;
+    vertical-align: middle;
+    color: #292929;
+    font-size:16px
+}
+
+.anchor-botton{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.anchor-botton img{
+    margin: 5px 6px;
+    width: 40%;
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*品目一覧↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.syumi-text{
+    color: #292929;
+    font-size: 20px;
+}
+.under-line{
+    background-color: #77b8d3;
+    width:  100%;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.syumi{
+    overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    padding-bottom: 50px;
+}
+.syumi::-webkit-scrollbar {
+    display:none;
+}
+.syumi img{
+    display: inline-block;
+    margin-right: 27px;
+    width: 50%;
+}
+/*品目一覧↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*受付時間・持ち込み方法↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.title-4{
+    color: #292929;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.title-4-caption{
+    color: #292929;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+/*受付時間・持ち込み方法↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*出典↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.syutten{
+    font-size: 14px;
+    color: #292929;
+}
+/*出典↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+
+
+
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
