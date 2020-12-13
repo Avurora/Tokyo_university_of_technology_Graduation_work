@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
+
+body{
+    background-color: #F7F7F7; /*灰色のカバー*/
+}
+.img-1{
+    margin-bottom: -6px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.all-margin{
+    margin: 0 40px;
+}
+.topline{
+    
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+
+
+/*動的ナビゲーションバー*/
+.menu-1{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+.menu-1 li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-1 li a{
+    text-decoration: none;
+    color: #77b8d3;
+    margin-left: 20px;
+}
+.menu-1-fix{
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    top: 24px;
+}
+.menu-1-fix.transform{
+    background-color: rgba(255,255,255,0.8);
+    top: 0px;
+}
+/*1199- delete*/
+#nav-drawer{
+    display: none;
+}
+
+/*フッター*/
+.margin-top{
+    margin-top: 100px;
+}
+.border{
+    border: 1px solid #77b8d3;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #292929;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+/*ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.nav-yohaku{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,0,4,1.00,0); 
+}
+.page-guide img{
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.page-guide{
+    display: inline-block;
+    margin-bottom: 50px;
+     padding-top: 40px;
+}
+.page-guide p{
+    display: inline-block;
+    color: #717171;
+}
+/*ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*タイトル↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.title-6{
+    font-size: 18px; 
+    color: #292929;
+}
+.title-7{
+    font-size: 22px; 
+    color: #292929;
+}
+/*タイトル↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*キャプション↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.caption-1{
+    color: #292929;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+/*キャプション↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*回収している品目_↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.hinnmoku p{
+     color: #292929;
+    text-align: center;
+}
+.hinnmoku img{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.hinnmoku{
+    width: 19.6%;
+    display: inline-block;
+    margin-top: 20px;
+    
+}
+/*回収している品目↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*協力店一覧↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.kyouryokutenitiran-title{
+    color: #292929;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.kyouryokutenitiran-caption{
+    color: #292929;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*協力店一覧↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*回収品目対応表↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.taiouhyou-title{
+    color: #292929;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+/*回収品目対応表↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*出典↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.syutten{
+    font-size: 14px;
+    color: #292929;
+}
+/*出典↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+/*消去系*/
+.pad-nav-delete{
+    display: none;
+}
+.sumaho-nav-delete{
+    display: none;
+}
+/*消去系*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
