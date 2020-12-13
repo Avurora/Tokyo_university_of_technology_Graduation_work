@@ -1,266 +1,237 @@
-@charset "UTF-8";
-/* CSS Document */
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tentoukaisyuu</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="-1200tenntoukaisyuu.css" media="screen and (min-width:1200px)">
+    <link rel="stylesheet" href="1199-tenntoukaisyuu.css" media="screen and (min-width:480px) and (max-width:1199px)">
+    <link rel="stylesheet" href="480-tenntoukaisyuu.css" media="screen and (max-width:480px)">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    font-family: 'TsukuARdGothic-Regular',sans-serif;
-    font-size: 16px;
-    color: #77b8d3;
-}
-html p{
-    color: #77b8d3;
-}
-
-body{
-    background-color: #F7F7F7; /*灰色のカバー*/
-}
-.img-1{
-    margin-bottom: -6px;
-}
-.FFFbgc{
-    background-color: #FFF;
-    display: block;
-    width: 1200px;
-    margin: auto;
-    position: relative;
-}
-.all-margin{
-    margin: 0 40px;
-}
-.topline{
+<body>
+<!--上帯↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+    <div class="topline">
+          <a href="">RSS　Feedry</a>
+       </div>
+<!--上帯↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->    
+<!--    -1200のnav↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+       <div class="menu-1-fix">
+       <div class="logo">
+       <a href="index.html"><img src="logo.png" alt="" align="left" href="index.html" width="140px"></a>
+       </div>
+       
+       <ul class="menu-1">
+           <li><a href="gominodasikata.html"> ゴミの出し方・分け方</a></li>
+           <li><a href="sodaigomi.html">粗大ゴミについて</a></li>
+           <li><a href="tenntoukaisyuu.html">店頭回収マップ</a></li>
+           <li><a href="leafletDL.html">リーフレット</a></li>
+           <li><a href="situgi.html">ゴミ処理Q&A</a></li>
+           <li><a href="tousaitonituite.html">当サイトについて</a></li>
+       </ul>
+           </div>
+<!--    -1200のnav↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->  
+<!--    padのnav↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+    <div class="pad-nav-delete">
+    <header>
+      <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
     
-    background-color: #73859a;
-}
-.topline a{
-    margin-right: 20px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: right;
-    display: block;
     
-}
-.logo{
-    display: inline-block;
-    margin: 12px 20px;
-}
-
-
-
-/*動的ナビゲーションバー*/
-.menu-1{
-    position: absolute;
-    top: 26px;
-    right: 30px;
-}
-.menu-1 li{
-    list-style: none;
-    display: inline-block;
-}
-.menu-1 li a{
-    text-decoration: none;
-    color: #77b8d3;
-    margin-left: 20px;
-}
-.menu-1-fix{
-    background-color: rgba(255,255,255,1);
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    transition: .5s;
-    top: 24px;
-}
-.menu-1-fix.transform{
-    background-color: rgba(255,255,255,0.8);
-    top: 0px;
-}
-/*1199- delete*/
-#nav-drawer{
-    display: none;
-}
-
-/*フッター*/
-.margin-top{
-    margin-top: 100px;
-}
-.border{
-    border: 1px solid #77b8d3;
-}
-.border-2{
-     margin-top: 6px;
-    border: 1px solid #77b8d3;
-    margin-bottom: 40px;
-}
-.boder-text{
-    color: #292929;
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-
-
-/*ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.nav-yohaku{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255,0,4,1.00,0); 
-}
-.page-guide img{
-    width: 20px;
-    display: inline-block;
-    position: relative;
-    top: 3px;
-}
-.page-guide{
-    display: inline-block;
-    margin-bottom: 50px;
-     padding-top: 40px;
-}
-.page-guide p{
-    display: inline-block;
-    color: #717171;
-}
-/*ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*タイトル↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.title-6{
-    font-size: 18px; 
-    color: #292929;
-}
-.title-7{
-    font-size: 22px; 
-    color: #292929;
-}
-/*タイトル↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*キャプション↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.caption-1{
-    color: #292929;
-    font-size: 18px;
-    text-align: justify;
-    text-justify: inter-ideograph;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    line-height: 40px;
-}
-/*キャプション↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*回収している品目_↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.hinnmoku p{
-     color: #292929;
-    text-align: center;
-}
-.hinnmoku img{
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-.hinnmoku{
-    width: 19.6%;
-    display: inline-block;
-    margin-top: 20px;
     
-}
-/*回収している品目↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*協力店一覧↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.kyouryokutenitiran-title{
-    color: #292929;
-    font-size: 20px;
-    padding-top: 30px;
-}
-.kyouryokutenitiran-caption{
-    color: #292929;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-/*協力店一覧↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*回収品目対応表↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.taiouhyou-title{
-    color: #292929;
-    font-size: 20px;
-    padding-top: 80px;
-    padding-bottom: 20px;
-}
-/*回収品目対応表↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-/*出典↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-.syutten{
-    font-size: 14px;
-    color: #292929;
-}
-/*出典↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
-
-
-
-/*消去系*/
-.pad-nav-delete{
-    display: none;
-}
-.sumaho-nav-delete{
-    display: none;
-}
-/*消去系*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+          <div class="logo">
+       <a href="index.html"><img src="logo-fff.png" alt="" align="left" href="index.html" width="70%"></a><br><br><br><br>
+       </div>
+       <ul class="menu-1">
+           <li><a href="gominodasikata.html"> ゴミの出し方・分け方</a></li>
+            <div class="underline"></div>
+           <li><a href="sodaigomi.html">粗大ゴミについて</a></li>
+           <div class="underline"></div>
+           <li><a href="tenntoukaisyuu.html">店頭回収マップ</a></li>
+           <div class="underline"></div>
+           <li><a href="leafletDL.html">リーフレット</a></li>
+           <div class="underline"></div>
+           <li><a href="situgi.html">ゴミ処理Q&A</a></li>
+           <div class="underline"></div>
+           <li><a href="tousaitonituite.html">当サイトについて</a></li>
+           <div class="underline"></div>
+           
+       </ul>
+       
+          
+    </div>
+  </div>
+</header>
+</div>
+<!--    padのnav↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+<!--    スマホのnav↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+    <div class="sumaho-nav-delete">
+            <header>
+  <div id="tag01">
+      <input id="tag02" type="checkbox" class="nav-unshown">
+      <label id="tag03" for="tag02"><span></span></label>
+      <label class="nav-unshown" id="tag04" for="tag02"></label>
+      <div id="tag05">
+          
+          <div class="hum-logo">
+          <a href="index.html"><img src="logo.png" alt="" width="170px"></a>
+        </div>
+
+          <ul class="menu-1">
+           <li><a href="gominodasikata.html"> ゴミの出し方・分け方</a></li>
+              <div class="hum-line"></div>
+           <li><a href="sodaigomi.html">粗大ゴミについて</a></li>
+              <div class="hum-line"></div>
+           <li><a href="tenntoukaisyuu.html">店頭回収マップ</a></li>
+              <div class="hum-line"></div>
+           <li><a href="leafletDL.html">リーフレット</a></li>
+              <div class="hum-line"></div>
+           <li><a href="situgi.html">ゴミ処理Q&A</a></li>
+              <div class="hum-line"></div>
+           <li><a href="tousaitonituite.html">当サイトについて</a></li>
+              <div class="hum-line"></div><br>
+       </ul>
+</div>
+  </div>
+</header>
+        </div>
+<!--    スマホのnav↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->    
+<!--PCメイン↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <img src="tentou-main.png" alt="" width="100%">
+<!--PCメイン↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->      
+<!--    FFFbgc↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+       <div class="FFFbgc">
+<!--    all-margin↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+       <div class="all-margin">
+<!--    ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <div class="page-guide">
+           <img src="home.png" alt="">
+           <p><a href="index.html">ホーム</a>　＞　<a href="#">店頭回収マップ</a></p>
+           </div>
+<!--    ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑--> 
+<!-- タイトル↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <p class="title-6">ゴミ店頭回収サービス</p>
+           <p class="title-7">再くるくん</p>
+<!-- タイトル↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+<!--キャプション↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <p class="caption-1">ごみの減量化や再資源化に積極的に取り組む店舗を「八千代市ごみ減量協力店(再くるくん協力店)として認定しています。循環型社会の形成に向けた取り組みを推進するものです。店頭で回収している資源物の品目に応じてランク付けをしています。各品目について記載されている店舗をクリックすると、該当する資源物について出す際の注意事項や、写真等が表示されます。ルールを守ったうえで、再くるくん協力店をご利用ください。</p>
+<!--キャプション↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->    
+<!-- 回収している品目↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           
+           <p class="title-6 title-8">【回収している品目】</p>
+           <div class="hinnmoku-reline">
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-01.png" alt="">
+           <p>布類</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-02.png" alt="">
+           <p>段ボール</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-03.png" alt="">
+           <p>ビニール</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-04.png" alt="">
+           <p>紙パック</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-05.png" alt="">
+           <p>乾電池</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-06.png" alt="">
+           <p>ビン類</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-07.png" alt="">
+           <p>雑誌</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-08.png" alt="">
+           <p>蛍光管</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-09.png" alt="">
+           <p>新聞</p>
+               </div>
+           <div class="hinnmoku">
+           <img src="kaisyuuhinnmoku-10.png" alt="">
+           <p>ペットボトル</p>
+               </div>
+               </div>
+           <p class="caption-1">新聞紙、雑誌、その他雑誌、ダンボール、紙パック、布類、白色トレイ、有色トレイ、透明容器、空缶、空びん、ペットボトル、ペットボトルキャップ、卵パック、乾電池、ボタン電池、充電池、レジ袋、トナーカートリッジ、蛍光管</p>
+<!-- 回収している品目↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑--> 
+<!-- 協力店一覧↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <p class="kyouryokutenitiran-title">協力店一覧の分布マップ</p>
+           <p class="kyouryokutenitiran-caption">Googleマップのリストにまとめたリンクになります。ご利用くださいませ。</p>
+           <a href="https://goo.gl/maps/fwRwicXuDCvRa5r18" class="kyouryokutenitiran-link">リストはこちら</a>
+           
+           <br><br>
+           <p class="syutten">2020年©︎八千代市オフィシャルサイト<br>
+            <a href="http://www.city.yachiyo.chiba.jp/124000/page100017.html">「再くるくん協力店をご利用ください」</a>より出典。</p>
+<!-- 協力店一覧↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->    
+<!-- 回収品目対応表↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+           <p class="taiouhyou-title">回収品目対応表</p>
+           <img src="taiouhyou.png" alt="" width="100%">
+<!-- 回収品目対応表↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->             
+<!--    フッター↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+          <div class="border margin-top"></div>
+          <div class="border-2"></div>
+        <p align="center" class="boder-text">©️ Yachiyo City dust shoot site.<br>
+                                             000- 0000-0000<br>
+                                             aaaaaaaaaaaaaa@gmail.com
+        </p>
+<!--    フッター↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->           
+           </div>
+<!--    all-margin↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+           </div>
+<!--    FFFbgc↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->           
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+<script src="script-1.js"></script>     
+</html>
