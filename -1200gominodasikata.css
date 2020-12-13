@@ -1,0 +1,513 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
+
+body{
+    background-color: #BDBDBD; /*灰色のカバー*/
+}
+.img-1{
+    margin-bottom: -6px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.all-margin{
+    margin: 0 40px;
+}
+.topline{
+    
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+
+
+/*フッター*/
+.margin-top{
+    margin-top: 100px;
+}
+.border{
+    border: 1px solid #77b8d3;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #292929;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+/*動的ナビゲーションバー*/
+.menu-1{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+.menu-1 li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-1 li a{
+    text-decoration: none;
+    color: #77b8d3;
+    margin-left: 20px;
+}
+.menu-1-fix{
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    top: 24px;
+}
+.menu-1-fix.transform{
+    background-color: rgba(255,255,255,0.8);
+    top: 0px;
+}
+/*ページガイド↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.nav-yohaku{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,0,4,1.00,0); 
+}
+.page-guide img{
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.page-guide{
+    display: inline-block;
+    margin-bottom: 50px;
+     padding-top: 40px;
+}
+.page-guide p{
+    display: inline-block;
+    color: #717171;
+}
+/*ページガイド↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*メインテキスト↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.main-text{
+     color: #000;
+    text-align: justify;
+    margin: 30px auto;
+    width: 640px;
+}
+/*メインテキスト↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/*アンカースイッチ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.anchor-1{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+.anchor-1 p{
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: 20px;
+    color: #292929;
+}
+.anchor-1 img{
+    position: relative;
+}
+
+.anchor-2{
+    position: relative;
+    display: inline-block;  
+    margin: 10px 10px;
+}
+.anchor-2 p{
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: 20px;
+    color: #292929;
+}
+.anchor-2 img{
+    position: relative;
+}
+.anchor-align{
+    width: 836px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+/*アンカースイッチ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+/*スイッチー1↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.switch-1{
+    position: relative;
+}
+.switch-1 p{
+    color: #FFF;
+    position: absolute;
+    top: 13px;
+    left: 110px;
+    font-size: 20px
+    
+}
+.switch-1 img{
+    position: relative;
+}
+/*スイッチー1↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*資源物①(ペットボトル・ビン・カン・金属)↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.title-1{
+    color: #292929;
+    font-size: 20px;
+    margin-bottom: 6px;
+    padding-top: 30px;
+}
+.line-1{
+    width: 100%;
+    background-color: #77b8d3;
+    height: 4px;
+    margin-bottom: -50px;
+}
+/*資源物①(ペットボトル・ビン・カン・金属)↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*ペットボトル↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.hukidasi-S{
+    position: relative;
+     display: inline-block; 
+    margin-top: 20px;
+}
+.hukidasi-S img{
+    padding-left: 65px;
+     display: inline-block;
+    position: relative;         
+}
+.hukidasi-S p{
+    z-index: 1;
+     position: absolute;
+    top: 6px;
+    left: 139px;
+    font-size: 20px;
+    line-height: 23px;
+}
+.eng-1{
+    font-size: 16px;
+    position: relative;
+    left: -19px;
+}
+.jan-1{
+    letter-spacing: 3px;
+}
+.hukidasi-L{
+    position: relative;
+     display: inline-block;  
+    margin-top: 20px;
+}
+.hukidasi-L img{
+    position: relative; 
+    padding-left: 85px;
+}
+.hukidasi-L p{
+    z-index: 1;
+     position: absolute;  
+    top: 6px;
+    left: 360px;
+    font-size: 20px;
+    line-height: 23px;
+}
+.eng-2{
+    font-size: 16px;
+    letter-spacing: 1.4px;
+}
+
+.petbottle-rei-flex{
+/*    background-color: #FFE4E5;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-left: 26px;
+    
+}
+.petbottle-rei-flex img{
+    width: 240px;
+    margin-top: 32px;
+}
+.petbottle-rei-flex p{
+    color: #292929;
+    font-size: 18px;
+    padding-top: 46px;
+}
+.petbottle-dasikata-flex{
+/*    background-color: #BFC1FF;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 710px;
+    height: 252px;
+    justify-content: space-around;
+    padding-top: 33px;
+    margin-left: 35px;
+}
+.petbottle-dasikata-flex img{
+    height: 180px;
+}
+.img-text-pet-group-1,.img-text-pet-group-2,.img-text-pet-group-3{
+    position: relative;
+}
+.img-text-pet-group-1 p{
+    position: absolute;
+    z-index: 1;
+    color: #292929;
+    left: -1px;
+    bottom: 0px;
+    font-size: 18px;
+    width: 200px;
+    
+}
+.img-text-pet-group-2 p{
+    position: absolute;
+    z-index: 1;
+    color: #292929;
+    left: 62px;
+    bottom: 0px;
+    font-size: 18px;
+    
+}
+.img-text-pet-group-3 p{
+    position: absolute;
+    z-index: 1;
+    color: #292929;
+    left: 69px;
+    bottom: 0px;
+    font-size: 18px;
+}
+.all-flex{
+    display: flex;
+    margin-bottom: 70px;
+}
+/*ペットボトル↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*吹き出しM　共通↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.hukidasi-align{
+}
+.hukidasi-left{
+/*    background-color: #000;*/
+    width: 50%;
+    position: relative;
+}
+.hukidasi-left img{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.hukidasi-left p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.hukidasi-right p{
+    font-size: 20px;
+     line-height: 23px
+}
+.hukidasi-right{
+/*    background-color: #000;*/
+    width: 50%;
+    position: relative;
+}
+.hukidasi-right img{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.hukidasi-right p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.hukidasi-right p{
+    font-size: 20px;
+     line-height: 23px
+}
+.hukidasi-align{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*吹き出しM　共通↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*カラーグループ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.red{
+/*    background-color: #FFC6C7;*/
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+.kan-01 img{
+    width: 300px;
+}
+.blue{
+/*    background-color: #C5CEFF;*/
+    width: 50%;
+    display: flex;
+}
+.kan-02 img{
+    width: 100%;
+}
+.kan-02 p{
+    color: #292929;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 150%;
+}
+.color-group{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+/*    background-color: #A0A0A0;*/
+    height: 450px;
+}
+/*カラーグループ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*びん↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.bin-01 img{
+    width: 380px;
+}
+/*びん↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*金属類↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.kinnzoku-01 img{
+    width: 460px;
+    
+}
+/*金属類↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*紙類↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.kami-01 img{
+    width: 300px;
+}
+/*紙類↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*布類↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.nuno-01 img{
+    width: 310px;
+}
+/*布類↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*可燃ゴミ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+.kanen-01 img{
+    width: 470px;
+}
+/*可燃ゴミ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*消去系↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+#trade-manner{
+    display: none;
+}
+#trade-manner2{
+    display: none;
+}
+#trade-manner3{
+    display: none;
+}
+#trade-manner4{
+    display: none;
+}
+#trade-manner5{
+    display: none;
+}
+#trade-manner6{
+    display: none;
+}
+#trade-manner7{
+    display: none;
+}
+#trade-manner8{
+    display: none;
+}
+#trade-manner9{
+    display: none;
+}
+.pad-nav-delete{
+    display: none;
+}
+.anchor-3{
+    display: none;
+}
+.pad_mobile-kan-delete{
+    display: none;
+}
+.sumaho-nav-delete{
+    display: none;
+}
+.anchor-align-2{
+    display: none;
+}
+.mobile-gomisyori{
+    display: none;
+}
+.anchor-align-pad{
+    display: none;
+}
+/*消去系↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
