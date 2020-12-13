@@ -1,151 +1,210 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tousaitonituite</title>
-<link rel="stylesheet" href="tousaitonituite_style_-1200.css" media="screen and (min-width:1200px)">
-<link rel="stylesheet" href="tousaitonituite_style_1199-.css" media="screen and (min-width:480px) and (max-width:1199px)">
-<link rel="stylesheet" href="tousaitonituite_style_480-.css" media="screen and (max-width:480px)">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
+@charset "UTF-8";
+/* CSS Document */
 
-<body>
-    
+/*全ページ共通項目*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    font-size: 16px;
+    color: #77b8d3;
+}
+html p{
+    color: #77b8d3;
+}
 
-    <div class="topline">
-          <a href="">RSS　Feedry</a>
-       </div>
+body{
+    background-color: #F7F7F7; /*灰色のカバー*/
+}
+.all-margin{
+    margin: 0 40px;
+}
+.topline{
+    background-color: #73859a;
+}
+.topline a{
+    margin-right: 20px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: right;
+    display: block;
     
+}
+.logo{
+    display: inline-block;
+    margin: 12px 20px;
+}
+.FFFbgc{
+    background-color: #FFF;
+    display: block;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.nav-delete{
+    height: 85px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+/*動的ナビゲーションバー*/
+.menu-1{
+    position: absolute;
+    top: 26px;
+    right: 30px;
+}
+.menu-1 li{
+    list-style: none;
+    display: inline-block;
+}
+.menu-1 li a{
+    text-decoration: none;
+    color: #77b8d3;
+    margin-left: 20px;
+}
+.menu-1-fix{
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition: .5s;
+    top: 24px;
+}
+.menu-1-fix.transform{
+    background-color: rgba(255,255,255,0.8);
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ページ独自項目*/
+.FFFbgc{
+    z-index: -1;
+}
+.guide-group{
+}
+.home{
+    width: 20px;
+}
+.guide  p{
+    color: #717171;
+    font-size:16px;
+    position: relative;
+    bottom: 2px;
+    left: 7px;
+}
+.guide a{
+    text-decoration: none;
+    color: #717171;
+}
+.title-1{
+    font-size: 22px;
+    color: #717171;
+    margin-top: 70px;
+}
+
+.border-1{
+    border: 1px solid  #77b8d3;
+    margin-top: 40px;
+}
+
+
+.square{
+    width: 7px;
+    height: 25px;
+    background-color: #77b8d3;
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 20px;
     
-    <!--    PCナビゲーション-->
-    <div class="menu-1-fix">
-       <div class="logo">
-       <a href="index.html"><img src="logo.png" alt="" align="left" href="index.html" width="140px"></a>
-       </div>
-       
-       <ul class="menu-1">
-           <li><a href="gominodasikata.html"> ゴミの出し方・分け方</a></li>
-           <li><a href="sodaigomi.html">粗大ゴミについて</a></li>
-           <li><a href="tenntoukaisyuu.html">店頭回収マップ</a></li>
-           <li><a href="leafletDL.html">リーフレット</a></li>
-           <li><a href="situgi.html">ゴミ処理Q&A</a></li>
-           <li><a href="tousaitonituite.html">当サイトについて</a></li>
-       </ul>
-           </div>
-    
-    
-     <!--    padナビゲーション-->
-        <header>
-      <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-          <div class="logo">
-       <a href="index.html"><img src="logo-fff.png" alt="" align="left" href="index.html" width="70%"></a><br><br><br><br>
-       </div>
-       <ul class="menu-1">
-           <li><a href="gominodasikata.html"> ゴミの出し方・分け方</a></li>
-            <div class="underline"></div>
-           <li><a href="sodaigomi.html">粗大ゴミについて</a></li>
-           <div class="underline"></div>
-           <li><a href="tenntoukaisyuu.html">店頭回収マップ</a></li>
-           <div class="underline"></div>
-           <li><a href="leafletDL.html">リーフレット</a></li>
-           <div class="underline"></div>
-           <li><a href="situgi.html">ゴミ処理Q&A</a></li>
-           <div class="underline"></div>
-           <li><a href="tousaitonituite.html">当サイトについて</a></li>
-           <div class="underline"></div>
-       </ul>
-    </div>
-  </div>
-</header>
-    
-    
-<div class="FFFbgc">
-<!--    背景を白にするブロック-->
-<div class="all-margin">
-        <div class="nav-delete"></div>
-        
-        
-        
-        
-    <div class="guide-group">
-    <img src="home.png" alt="" class="home" align="left">
-    <div class="guide">
-    <p><a href="index.html">ホーム</a>　＞　<a href="#">当サイトについて</a></p>
-    </div>
-    </div>
-    
-    
-    
-    
-<p class="title-1">当サイトについて</p>
-    
-    <div class="border-1" align="center"></div>
-    
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">当サイトについて</p><br>
-    <p class="caption-1">このサイトは千葉県八千代市のごみ処理サイトとは別の東京工科大学、デザイン学部の卒業制作にて制作された物になります。八千代市オフィシャルサイトが利用したい方は<a href="http://www.city.yachiyo.chiba.jp/124000/page000026.html">こちら</a>をご利用くださいませ。</p>
-    </div>
-    
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">私たちについて</p><br>
-    <p class="caption-1">私は東京工科大学デザイン学部デザイン学科にてデザインを学んできた者です。当サイト「八千代市ゴミ処理サイト(非営利)」は八千代市の市民の方々に少しでも役に立てるように八千代市のゴミ処理事情はゴミ処理方法をまとめたwebサイトになります。高齢者の方々やwebサイトをあまり利用しない方々にでも容易に理解してもらえるようなインターフェースでこのwebサイトは構築しております。ご意見ご要望があれば管理人までお知らせください。<br>
-<br>
-サイト名：八千代市ゴミ処理サイト<br>
-開設日：2020/12/31<br>
-URL：<span class="blue">https.//github.yachiyo-gomisyori-site</span></p>
-    </div>
-    
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">コメント</p><br>
-    <p class="caption-1">他の利用者を不快にさせる発言、誹謗中傷、記事とは関係のない内容、宣伝を含むコメント、犯罪や法律を犯す内容、また不適切と見なされたコメントにつきましては管理人の判断で修正・削除させていただきます。また、出来るだけ偏向が無いような形でまとめておりますが、まとめ方に関する貴重なご意見、ご批判がございましたらお問い合わせ欄よりメールでご連絡ください。コメント欄への書き込みは削除対象とさせていただきます。</p>
-    </div>
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">埋め込みコンテンツ</p><br>
-    <p class="caption-1">このサイトの投稿には埋め込みコンテンツが含まれます。他サイトからの埋め込みコンテンツは、訪問者がそのサイトを訪れた場合とまったく同じように振る舞います。</p>
-    </div>
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">お問い合わせについて</p><br>
-    <p class="caption-1">当方へのご連絡は<a href="d0117105b2@edu.teu.ac.jp">d0117105b2@edu.teu.ac.jp</a>qへメールをお送りくださいませ。
-    </div>
-    
-    <div class="watasitatinituite">
-    <div class="square"></div>
-    <p class="title-2">記事の内容について</p><br>
-    <p class="caption-1">当サイトは、八千代市のゴミ処理情報についてまとめたサイトであり、利益になるような行為は一切行っておりません。また、動画、音声等すべての知的所有権は著作者・団体に帰属しております。記事の削除依頼等の質問に関しましては,<a href="d0117105b2@edu.teu.ac.jp">d0117105b2@edu.teu.ac.jp</a>へメールをお送りくださいませ。
-なお、当サイトを利用したことでいかなる損害が生じることがあっても、
-当サイト運営者に責任は及ばないものとします。</p>
-    </div>
-    
-    
-    
-    
-<div class="border"></div>
-          <div class="border-2"></div>
-           <p align="center" class="boder-text">©️ Yachiyo City dust shoot site.<br>
-000- 0000-0000<br>
-aaaaaaaaaaaa@gmail.com
-</p>
-    
-    
-    
-    
-</div>
-</div>
-<script src="script-1.js"></script> 
-</body>
-</html>
+}
+.title-2{
+    color:  #000;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    left: 10px;
+}
+.caption-1{
+    color: #000;
+    line-height: 30px;
+    text-align: justify;
+  text-justify: inter-ideograph;
+    width: 1050px;
+    margin-left: 42px;
+    margin-top: 20px
+}
+.blue{
+    color: #77b8d3;
+    text-decoration: underline;
+}
+.border{
+    border: 1px solid #77b8d3;
+    margin-top: 150px;
+}
+.border-2{
+     margin-top: 6px;
+    border: 1px solid #77b8d3;
+    margin-bottom: 40px;
+}
+.boder-text{
+    color: #000;
+    font-size: 14px;
+    padding-bottom: 50px;
+}
+
+
+header{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
